@@ -1,0 +1,780 @@
+/* Css general per a totes les pagines html del projecte Github */
+/* Estilos generales para todas las páginas HTML del proyecto GitHub */
+
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Css pels errors */
+/* Estilos para mensajes de error */
+.mensaje-error {
+    background-color: #ffcccc;
+    /* Color de fondo del mensaje de error */
+    color: #ff0000;
+    /* Color del texto del mensaje de error */
+    padding: 10px;
+    /* Relleno alrededor del mensaje de error */
+    text-align: center;
+    /* Alineación del texto al centro */
+}
+
+/* Configuració general del body */
+/* Configuración general del elemento 'body' (cuerpo) */
+body {
+    margin: 0;
+    /* Elimina el margen predeterminado del cuerpo del documento */
+}
+
+main {
+    height: 100%;
+    margin-bottom: 5vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+/* Configuració dels tituls */
+/* Configuración para los títulos */
+h1,
+h3 {
+    color: #1E473A;
+    /* Color del texto para los encabezados h1 y h3 */
+}
+
+h2 {
+    color: white;
+    /* Color del texto para los encabezados h2 */
+}
+
+h4 {
+    color: #9AC135;
+    /* Color del texto para los encabezados h4 */
+}
+
+/* Configuració paragrafs */
+/* Configuración para los párrafos */
+p {
+    color: black;
+    /* Color del texto para los párrafos */
+}
+
+/* Configuració de les llistes */
+/* Configuración para las listas */
+li {
+    text-decoration: none;
+    /* Elimina la decoración de texto para las listas */
+    list-style: none;
+    /* Elimina los marcadores/bolitas de las listas */
+}
+
+/* Configuració links (a) */
+/* Configuración para los enlaces (a) */
+a {
+    color: #9AC135;
+    /* Color de los enlaces */
+    text-decoration: none;
+    /* Elimina la decoración de texto para los enlaces */
+}
+
+a:hover {
+    cursor: pointer;
+    color: #3f9177;
+    /* Cambia el cursor del mouse a una mano cuando se pasa sobre los enlaces */
+}
+
+/* Configuració submit */
+/* Estilos para los botones de envío (submit) (comentado, no tiene efecto) */
+
+/* Configuració inputs */
+/* Configuración para los campos de entrada (inputs) */
+input {
+    padding: 5px 10px;
+    /* Relleno alrededor de los campos de entrada */
+    margin: 10px;
+    /* Márgenes para los campos de entrada */
+    background-color: none;
+    /* Color de fondo de los campos de entrada a ninguno */
+    border: none;
+    /* Elimina el borde de los campos de entrada */
+    border-bottom: solid 1px black;
+    /* Borde inferior sólido de 1px para los campos de entrada */
+}
+
+input[type="submit"] {
+    /* Estilos para los botones de envío específicos (type="submit") */
+    background: rgb(0, 151, 178);
+    background: linear-gradient(90deg, rgba(0, 151, 178, 1) 0%, rgba(126, 217, 87, 1) 100%);
+    color: white;
+    /* Color del texto */
+    border: none;
+    /* Elimina el borde */
+    padding: 10px 15px;
+    /* Relleno alrededor del botón de envío */
+    border-radius: 50px;
+    /* Radio de borde para que el botón sea redondeado */
+    text-align: center;
+    /* Alineación del texto al centro */
+    font-weight: bold;
+    /* Peso de la fuente en negrita */
+}
+
+input[type="submit"]:hover {
+    /* Estilos para los botones de envío cuando se pasa el mouse sobre ellos */
+    background: rgb(0, 151, 178);
+    background: linear-gradient(90deg, rgb(0, 102, 120) 0%, rgb(84, 146, 58) 100%);
+    cursor: pointer;
+    /* Cambia el cursor del mouse a un puntero al pasar sobre el botón */
+}
+
+/* Id input type submit logout */
+/* Estilos para el botón de cierre de sesión con el ID "logout" */
+#logout {
+    background: rgb(255, 49, 49);
+    background: linear-gradient(90deg, rgba(255, 49, 49, 1) 0%, rgba(255, 145, 77, 1) 100%);
+}
+
+#logout:hover {
+    /* Estilos para el botón de cierre de sesión cuando se pasa el mouse sobre él */
+    background: rgb(255, 49, 49);
+    background: linear-gradient(90deg, rgb(130, 25, 25) 0%, rgb(153, 86, 45) 100%);
+    cursor: pointer;
+    /* Cambia el cursor del mouse a un puntero al pasar sobre el botón */
+}
+
+/* Part de css asignada a login.html */
+
+/* Estilos para la página de inicio de sesión en login.html */
+.loginmain {
+    display: flex;
+    /* Usa flexbox para organizar los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    justify-content: center;
+    /* Centra horizontalmente los elementos */
+    height: 100vh;
+    /* Establece la altura al 100% de la ventana */
+    display: flex;
+    /* Doble declaración (posiblemente un error) */
+    justify-content: space-between;
+    /* Espacio entre elementos flexibles */
+}
+
+.ginebro {
+    /* Estilos para un elemento con clase "ginebro" en login.html */
+    text-align: center;
+    /* Alineación del texto al centro */
+    flex: 1;
+    /* Flexbox, utiliza 1 unidad de espacio flexible */
+    height: 100%;
+    /* Altura al 100% */
+    background: rgb(0, 151, 178);
+    /* Fondo degradado */
+    background: linear-gradient(90deg, rgba(0, 151, 178, 1) 0%, rgba(126, 217, 87, 1) 100%);
+}
+
+#logologin {
+    /* Estilos para un elemento con ID "logologin" en login.html */
+    max-width: 100%;
+    /* Ancho máximo del elemento */
+    height: auto;
+    /* Altura automática (ajustada según el contenido) */
+    margin-top: 40vh;
+    /* Margen superior (40% de la altura de la ventana) */
+}
+
+.info {
+    /* Estilos para un elemento con clase "info" en login.html */
+    flex: 1;
+    /* Flexbox, utiliza 1 unidad de espacio flexible */
+    display: flex;
+    /* Usa flexbox para organizar los elementos */
+    flex-direction: column;
+    /* Dirección de columna para los elementos flexibles */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    gap: 10px;
+    /* Espacio entre elementos secundarios */
+    height: 100%;
+    /* Altura al 100% */
+    justify-content: center;
+    /* Centra verticalmente los elementos */
+    text-align: center;
+    /* Alineación del texto al centro */
+}
+
+.info>a {
+    /* Estilos para enlaces dentro de un elemento con clase "info" */
+    font-size: small;
+    /* Tamaño de fuente pequeño */
+    margin-top: -15px;
+    /* Margen superior negativo */
+}
+
+.info>a:hover {
+    /* Estilos para enlaces dentro de un elemento con clase "info" cuando se pasa el mouse sobre ellos */
+    color: #3f9177;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+#forgot {
+    /* Estilos para un elemento con ID "forgot" en login.html */
+    margin-left: -10vw;
+    /* Margen izquierdo negativo */
+    color: gray;
+    /* Color de texto gris */
+    font-size: smaller;
+    /* Tamaño de fuente más pequeño */
+}
+
+#forgot:hover {
+    /* Estilos para un elemento con ID "forgot" cuando se pasa el mouse sobre él */
+    color: #3f9177;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+.info>input {
+    /* Estilos para campos de entrada dentro de un elemento con clase "info" */
+    width: 50vw;
+    /* Ancho del campo de entrada */
+}
+
+.info input[type="submit"] {
+    /* Estilos para botones de envío dentro de un elemento con clase "info" */
+    width: 10vw;
+    /* Ancho del botón de envío */
+}
+
+/* Estilo para el elemento 'footer' */
+footer {
+    padding: 2vh 2vw 2vh 2vw; /* Padding con valores en unidades de altura y ancho de la ventana */
+    background-color: #1a3c32; /* Color de fondo */
+}
+
+/* Estilo para los elementos 'p' dentro de 'footer' */
+footer p{
+    color: white; /* Color del texto */
+}
+
+/* Estilo para los elementos 'div' directamente dentro de 'footer' */
+footer > div {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: space-between; /* Distribución del espacio entre elementos flexibles */
+    /* border: solid 1px; */ /* Borde sólido (comentado) */
+}
+
+/* Estilo para los elementos 'section' directamente dentro de 'footer' */
+footer > section {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: space-evenly; /* Distribución del espacio entre elementos flexibles */
+    /* border: solid 1px; */ /* Borde sólido (comentado) */
+    border-bottom: 1px solid; /* Borde inferior sólido de 1 píxel */
+}
+
+/* Estilo para los elementos 'div' directamente dentro de 'section' dentro de 'footer' */
+footer > section > div {
+    /* border: solid 1px; */ /* Borde sólido (comentado) */
+    width: 20vw; /* Ancho con unidades de ancho de ventana */
+}
+
+/* Estilo para los elementos 'li' dentro de 'ul' dentro de 'div' dentro de 'section' dentro de 'footer' */
+footer > section > div > ul > li {
+    padding-bottom: 2vh; /* Padding inferior con unidades de altura de ventana */
+    color: #9AC135; /* Color del texto */
+}
+
+/* Estilo para los elementos 'ul' dentro de 'div' dentro de 'section' dentro de 'footer' */
+footer > section > div > ul {
+    margin-left: -3vw; /* Margen izquierdo negativo con unidades de ancho de ventana */
+}
+
+/* Estilo para el elemento con el id 'newsletter' */
+#newsletter{
+    width:40vw; /* Ancho con unidades de ancho de ventana */
+    padding-left: 15vw; /* Padding izquierdo con unidades de ancho de ventana */
+    text-align: center;
+}
+
+/* Estilo para los elementos 'input' dentro de '#newsletter' */
+#newsletter > input{
+    height: 5vh; /* Altura con unidades de altura de ventana */
+    margin-left: 0.5vw; /* Margen izquierdo con unidades de ancho de ventana */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    border-bottom: solid 1px black; /* Borde inferior sólido de 1 píxel en color negro */
+    background-color: inherit; /* Color de fondo heredado */
+    width: 20vw; /* Ancho con unidades de ancho de ventana */
+}
+
+/* Estilo para los elementos 'input' dentro de '#newsletter' cuando están enfocados */
+#newsletter > input:focus{
+    border: none; /* Sin borde cuando el elemento está enfocado */
+}
+
+/* Estilo para el elemento 'button' dentro de '#newsletter' */
+#newsletter > button{
+    border-radius: 5px; /* Radio de borde de 5 píxeles */
+    height: 7vh; /* Altura con unidades de altura de ventana */
+    width: 10vw; /* Ancho con unidades de ancho de ventana */
+    border: none; /* Sin borde */
+    background-color: #9AC135; /* Color de fondo */
+    box-shadow: #153028 3px 3px; /* Sombra con desplazamiento en color especificado */
+}
+
+/* Estilo para el elemento 'button' dentro de '#newsletter' cuando se encuentra en estado de 'hover' */
+#newsletter > button:hover{
+    background-color: #3f9177; /* Cambio de color de fondo al pasar el cursor sobre el botón */
+    cursor: pointer; /* Cambio de cursor al puntero */
+}
+
+/* Estilo para el elemento 'p' dentro de '#newsletter' */
+#newsletter > p{
+    font-size: small; /* Tamaño de fuente pequeño */
+}
+
+/* Estilo para el elemento con el id 'copyright' */
+#copyright{
+    padding-left: 5vw; /* Padding izquierdo con unidades de ancho de ventana */
+    padding-right: 5vw; /* Padding derecho con unidades de ancho de ventana */
+}
+
+/* Estilo para los elementos 'li' dentro de 'ul' dentro de '#copyright' */
+#copyright > ul > li {
+    display: inline-flex; /* Mostrar como flexbox en línea */
+}
+
+/* Estilo para los elementos 'img' dentro de 'a' dentro de 'li' dentro de 'ul' dentro de '#copyright' */
+#copyright > ul > li > a > img {
+    width: 25px; /* Ancho de 25 píxeles */
+    height: 25px; /* Altura de 25 píxeles */
+    margin-left: 1vw; /* Margen izquierdo con unidades de ancho de ventana */
+}
+
+/* Estilo para los elementos 'img' dentro de 'a' dentro de 'li' dentro de 'ul' dentro de '#copyright' cuando se encuentran en estado de 'hover' */
+#copyright > ul > li > a > img:hover {
+    cursor: pointer; /* Cambio de cursor al puntero al pasar el cursor sobre la imagen */
+}
+
+/* Final configuració login.html ---------------------------------------------------------------- */
+
+/* Configuració css per a la pestanya register.html */
+/* Estilos CSS para la página register.html */
+
+#headerregister {
+    /* Estilos para el encabezado con ID "headerregister" */
+    background: rgb(0, 151, 178);
+    /* Fondo degradado */
+    background: linear-gradient(90deg, rgba(0, 151, 178, 1) 0%, rgba(126, 217, 87, 1) 100%);
+    display: flex;
+    /* Usa flexbox para organizar los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    height: 100px;
+    /* Altura del encabezado */
+}
+
+#headerregister>h1 {
+    /* Estilos para el encabezado h1 dentro del encabezado con ID "headerregister" */
+    color: white;
+    /* Color del texto blanco */
+    margin-left: 30vw;
+    /* Margen izquierdo (30% del ancho de la ventana) */
+}
+
+#headerregister>img {
+    /* Estilos para una imagen dentro del encabezado con ID "headerregister" */
+    margin-left: 5vw;
+    /* Margen izquierdo (5% del ancho de la ventana) */
+    width: 20vw;
+    /* Ancho de la imagen */
+}
+
+.registermain {
+    /* Estilos para la sección principal con clase "registermain" */
+    text-align: center;
+    /* Alineación del texto al centro */
+    padding: 7vw;
+    /* Relleno alrededor del contenido principal */
+}
+
+.registermain table {
+    /* Estilos para las tablas dentro de la sección principal */
+    width: 80%;
+    /* Ancho de la tabla */
+    margin: 0 auto;
+    /* Centrar horizontalmente la tabla */
+}
+
+.registermain td {
+    /* Estilos para las celdas de la tabla dentro de la sección principal */
+    padding-bottom: 10vh;
+    /* Espacio inferior entre celdas */
+}
+
+.registermain table input {
+    /* Estilos para los campos de entrada dentro de la tabla */
+    width: 25vw;
+    /* Ancho de los campos de entrada */
+}
+
+.registermain>a {
+    /* Estilos para enlaces dentro de la sección principal */
+    font-size: small;
+    /* Tamaño de fuente pequeño */
+}
+
+.registermain>a:hover {
+    /* Estilos para enlaces dentro de la sección principal cuando se pasa el mouse sobre ellos */
+    color: #3f9177;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Final configuració de la pestanya register.html ------------------------------------------------ */
+
+/* Configuració index.html */
+/* Estilos CSS para la página index.html */
+
+menu {
+    /* Estilos para un elemento 'menu' */
+    border-bottom: #1E473A solid 2px;
+    /* Borde inferior sólido de 2px */
+    height: 10vh;
+    /* Altura del menú */
+}
+
+menu>ul {
+    /* Estilos para una lista no ordenada dentro del menú */
+    margin-top: -6vh;
+    /* Margen superior negativo */
+    height: 20px;
+    /* Altura de la lista no ordenada */
+}
+
+menu>ul>li {
+    /* Estilos para elementos de lista dentro de la lista no ordenada */
+    display: inline-block;
+    /* Mostrar como bloque en línea */
+    margin-left: 5vw;
+    /* Margen izquierdo (5% del ancho de la ventana) */
+}
+
+menu > ul > li > a {
+    /* Estilos para enlaces dentro de elementos de lista */
+    color: #1E473A;
+    /* Color del texto */
+}
+
+menu > ul > li > a > h3 {
+    /* Estilos para encabezados h3 dentro de enlaces */
+    margin-top: -10vh;
+    /* Margen superior negativo */
+    padding-top: -10px;
+    /* Relleno superior negativo (esto no tiene efecto) */
+}
+
+menu > ul > li > a > h3:hover {
+    /* Estilos para encabezados h3 dentro de enlaces cuando se pasa el mouse sobre ellos */
+    color: #3f9177;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+menu > img {
+    /* Estilos para imágenes dentro del menú */
+    width: 60px;
+    /* Ancho de la imagen */
+    height: 50px;
+    /* Altura de la imagen */
+    display: inline-block;
+    /* Mostrar como bloque en línea */
+}
+
+.negrita {
+    /* Estilos para elementos con clase "negrita" */
+    color: #9AC135;
+    /* Color del texto */
+}
+
+#conficon {
+    /* Estilos para un elemento con ID "conficon" */
+    width: 25px;
+    /* Ancho del elemento */
+    height: 25px;
+    /* Altura del elemento */
+    margin-left: 25vw;
+    /* Margen izquierdo (55% del ancho de la ventana) */
+}
+
+/* Final configuració de la pestanya index.html ---------------------------------------------------- */
+
+/* Inici configuració de la pestanya perfi.php */
+
+#avatar {
+    width: 19vw; /* Establece el ancho del elemento con el id "avatar" al 20% del ancho de la ventana */
+    height: 40vh; /* Establece la altura del elemento con el id "avatar" al 40% de la altura de la ventana */
+}
+
+#qr {
+    width: 20vw; /* Establece el ancho del elemento con el id "qr" al 20% del ancho de la ventana */
+    height: 40vh; /* Establece la altura del elemento con el id "qr" al 40% de la altura de la ventana */
+}
+
+#perfil {
+    display: flex; /* Utiliza flexbox para controlar el diseño de los elementos dentro del elemento con el id "perfil" */
+    justify-content: center; /* Centra horizontalmente los elementos hijos dentro de "perfil" */
+}
+
+#perfil input[type="submit"] {
+    width: 15vw; /* Establece el ancho de los botones de tipo "submit" dentro de "perfil" al 15% del ancho de la ventana */
+    margin: 0px; /* Elimina el margen en todas las direcciones */
+    margin-top: 5vh; /* Establece un margen superior del 5% de la altura de la ventana */
+}
+
+#perfil input {
+    width: 25vw; /* Establece el ancho de los elementos <input> dentro de "perfil" al 25% del ancho de la ventana */
+    margin-right: 20vw; /* Establece un margen derecho del 20% del ancho de la ventana para los elementos <input> dentro de "perfil" */
+}
+
+#popup-logout-content {
+    background-color: #153028; /* Establece el color de fondo del elemento con el id "popup-logout-content" a un tono de verde oscuro (#153028) */
+}
+
+/* Css del pop up de login i politiques */
+
+/* Estilo para el contenedor del pop-up */
+#popup-container {
+    display: none;
+    /* Inicialmente oculto */
+    position: fixed;
+    /* Posicionamiento fijo en la pantalla */
+    top: 0;
+    /* Arriba de la pantalla */
+    left: 0;
+    /* A la izquierda de la pantalla */
+    width: 100%;
+    /* Ancho del 100% de la pantalla */
+    height: 100%;
+    /* Alto del 100% de la pantalla */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    z-index: 999;
+    /* Capa superior */
+    display: flex;
+    /* Uso de flexbox para centrar contenido */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+
+}
+
+/* Estilo para el contenido del pop-up */
+#popup-container > div {
+    background: #fff;
+    /* Fondo blanco */
+    padding: 2vw;
+    /* Relleno de 20 píxeles */
+    border: 1px solid #ccc;
+    /* Borde sólido con color gris */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Sombra ligera */
+    text-align: center;
+    /* Texto centrado */
+    border-radius: 10px;
+}
+
+#popup-container > div > ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7vh;
+}
+
+/* Estilo para el botón de aceptar */
+#popup-container > div > ul > li > button {
+    background-color: #9AC135;
+    /* Fondo verde */
+    border: none;
+    /* Sin borde */
+    padding: 10px 20px;
+    /* Relleno del botón */
+    cursor: pointer;
+    /* Cambio de cursor al pasar el mouse */
+    border-radius: 5px;
+    margin-top: -2.5vh;
+}
+
+#popup-container > div > ul > li > button:hover {
+    background-color: #3f9177;
+}
+
+/* Configuracio pàgina formularis */
+
+/* Estilo para la tabla de formularios */
+.tabla-formularios {
+    max-height: 100vh;
+    /* Establece la altura máxima del contenedor */
+    overflow-y: auto;
+    /* Agrega una barra de desplazamiento vertical si el contenido es más alto que la altura máxima */
+}
+
+/* Estilo para la tabla en general */
+table {
+    width: 100%;
+    /* Haz que la tabla ocupe el 100% del ancho del contenedor */
+    /* Estilos adicionales para la tabla si es necesario */
+}
+
+/* Probes de la taula de formularis */
+
+/* Estilo adicional para la tabla de formularios */
+.tabla-formularios {
+    width: 100%;
+    border-collapse: collapse;
+    /* Colapsa los bordes de la tabla */
+}
+
+/* Estilo para las celdas de la tabla */
+.tabla-formularios th,
+.tabla-formularios td {
+    padding: 10px;
+    /* Relleno de celdas de 10 píxeles */
+    border: 1px solid #ccc;
+    /* Borde sólido con color gris */
+    text-align: left;
+    /* Alineación de texto a la izquierda */
+}
+
+/* Estilo para las celdas de encabezado de la tabla */
+.tabla-formularios th {
+    background-color: #f2f2f2;
+    /* Fondo gris claro */
+}
+
+/* Estilo para el contenedor de tabla con desplazamiento */
+.table-container {
+    max-height: 400px;
+    /* Establece la altura máxima del contenedor */
+    overflow-y: auto;
+    /* Agrega una barra de desplazamiento vertical si el contenido es más alto que la altura máxima */
+    border: 1px solid #ccc;
+    /* Borde sólido con color gris */
+    border-radius: 5px;
+    /* Borde redondeado */
+    margin-top: 20px;
+    /* Margen superior de 20 píxeles */
+}
+
+#formularis{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+/* Final probes de la taula de formularis ---------------------------------------------------------- */
+
+/* Final configuració de la pestanya config.html --------------------------------------------------- */
+
+
+
+/* Estilo para elementos con la clase 'blog_post' */
+.blog_post {
+    background: #fff; /* Color de fondo */
+    width: 40vw; /* Ancho con unidades de ancho de ventana */
+    border-radius: 10px; /* Radio de borde de 10 píxeles */
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3); /* Sombra con desplazamiento y transparencia */
+    position: relative; /* Posición relativa */
+    margin: 3vw; /* Margen */
+    padding: 2vw; /* Padding */
+    padding-left: 6vw; /* Padding izquierdo */
+}
+
+/* Estilo para elementos 'input' dentro de elementos con la clase 'blog_post' */
+.blog_post input{
+    width: 31vw; /* Ancho con unidades de ancho de ventana */
+}
+
+/* Estilo para elementos 'input' con el atributo 'type' igual a "file" dentro de elementos con la clase 'blog_post' */
+.blog_post input[type="file"]{
+    width: 29.7vw; /* Ancho con unidades de ancho de ventana */
+}
+
+/* Estilo para elementos 'input' con el atributo 'type' igual a "submit" dentro de elementos con la clase 'blog_post' */
+.blog_post input[type="submit"]{
+    width: 10vw; /* Ancho con unidades de ancho de ventana */
+    margin-top: 2vh; /* Margen superior con unidades de altura de ventana */
+}
+
+/* Estilo para elementos 'textarea' dentro de elementos con la clase 'blog_post' */
+.blog_post textarea {
+    width: 35vw; /* Ancho con unidades de ancho de ventana */
+    resize: none; /* No permitir redimensionamiento del textarea */
+}
+
+/* Estilo para elementos con la clase 'posted' */
+.posted {
+    background: #fff; /* Color de fondo */
+    max-width: 50vw; /* Ancho máximo con unidades de ancho de ventana */
+    border-radius: 10px; /* Radio de borde de 10 píxeles */
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3); /* Sombra con desplazamiento y transparencia */
+    position: relative; /* Posición relativa */
+    margin: 3vw; /* Margen */
+    padding: 2vw; /* Padding */
+}
+
+/* Estilo para elementos con la clase 'jump' */
+.jump {
+    max-width: 50vw; /* Ancho máximo con unidades de ancho de ventana */
+    word-wrap: break-word; /* Romper palabras largas */
+}
+
+/* Estilo para elementos 'div' dentro de elementos con la clase 'posted' */
+.posted > div {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: flex-end; /* Justificar contenido hacia el extremo derecho */
+}
+
+/* Estilo para elementos 'a' dentro de elementos 'div' dentro de elementos con la clase 'posted' */
+.posted > div > a {
+    margin-right: 2vw; /* Margen derecho */
+}
+
+/* Estilo para elementos 'img' dentro de elementos con la clase 'posted' */
+.posted img {
+    max-width: 50vw; /* Ancho máximo con unidades de ancho de ventana */
+    height: 15vw; /* Altura con unidades de ancho de ventana */
+    margin-bottom: 5vh; /* Margen inferior con unidades de altura de ventana */
+}
+
+/* Estilo para el elemento con el id 'return_blog' */
+#return_blog {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: flex-end; /* Justificar contenido hacia el extremo derecho */
+    margin-right: 2vw; /* Margen derecho */
+    margin-top: 2vw; /* Margen superior */
+}
+
+/* Estilo para el elemento con el id 'see_more_post' */
+#see_more_post {
+    margin: 2.5vw; /* Margen */
+    padding: 1.5vw; /* Padding */
+    /* border: 1px solid; */ /* Borde (comentado) */
+}
+
+/* Estilo para elementos 'h4' dentro de elementos con el id 'see_more_post' */
+#see_more_post h4 {
+    margin-left: 0.5vw; /* Margen izquierdo */
+    margin-top: -1vw; /* Margen superior negativo */
+}
+
+/* Estilo para elementos 'p' dentro de elementos con el id 'see_more_post' */
+#see_more_post p {
+    margin-left: 2vw; /* Margen izquierdo */
+    /* border: 1px solid; */ /* Borde (comentado) */
+}
+
+/* Estilo para elementos 'img' dentro de elementos con el id 'see_more_post' */
+#see_more_post img {
+    max-width: 50vw; /* Ancho máximo con unidades de ancho de ventana */
+    max-height: 25vw; /* Altura máxima con unidades de ancho de ventana */
+    margin: 5vh; /* Margen superior e inferior con unidades de altura de ventana */
+}
+
+/* Final configuració pestanya de thread.php de la carpeta Foro ----------------------------------- */
